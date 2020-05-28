@@ -35,19 +35,17 @@ VERILATOR = $(VERILATOR_ROOT)/bin/verilator
 endif
 
 TARGET=cnt
+INFO=info
 
 default:
 	@echo "-- Verilator hello-world simple example"
 	@echo "-- VERILATE & BUILD --------"
-	$(VERILATOR) -cc --exe --build -j --trace $(TARGET).v sim_main.cpp
-	@echo "-- RUN ---------------------"
-	obj_dir/V$(TARGET)
+	$(VERILATOR) $(TARGET).v --xml-only --xml-output $(INFO).xml
+	@echo "-- XML to JSON ---------------------"
+	python3 read_xml.py $(INFO).xml >> $(INFO).json
 	@echo "-- DONE --------------------"
-	@echo "Note: Once this example is understood, see examples/make_tracing_c."
-	@echo "Note: Also see the EXAMPLE section in the verilator manpage/document."
-
 ######################################################################
 
 maintainer-copy::
 clean mostlyclean distclean maintainer-clean::
-	-rm -rf obj_dir *.log *.dmp *.vpd core
+	-rm -rf obj_dir *.log *.dmp *.vpd core $(INFO).*
