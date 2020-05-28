@@ -1,9 +1,13 @@
 from pyverilator import pyverilator as veri
 from pprint import pprint
 
+print("---------dir(veri)------------")
 pprint(dir(veri))
+print("---------dir(ver.PyVerilator)---")
+pprint(dir(veri.PyVerilator))
 
 sim = veri.PyVerilator.build("./cnt.v")
+
 
 print("sim.json_data : ")
 print(sim.json_data)

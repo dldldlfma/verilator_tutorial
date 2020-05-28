@@ -1,0 +1,87 @@
+make: Entering directory '/home/ksg/tutorial_verilator/4_pyverilator/obj_dir'
+g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o pyverilator_wrapper.o ../obj_dir/pyverilator_wrapper.cpp
+g++ -fPIC -shared pyverilator_wrapper.o verilated.o verilated_vcd_c.o Vcnt__ALL.a    -o Vcnt  
+make: Leaving directory '/home/ksg/tutorial_verilator/4_pyverilator/obj_dir'
+---------dir(veri)------------
+['IO',
+ 'Internals',
+ 'PyVerilator',
+ '__builtins__',
+ '__cached__',
+ '__doc__',
+ '__file__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ 'ctypes',
+ 'json',
+ 'os',
+ 're',
+ 'shutil',
+ 'subprocess',
+ 'tclwrapper',
+ 'template_cpp']
+---------dir(ver.PyVerilator)---
+['__class__',
+ '__contains__',
+ '__del__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__setitem__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ '_read',
+ '_read_32',
+ '_read_64',
+ '_read_embedded_data',
+ '_read_words',
+ '_sim_init',
+ '_write',
+ '_write_32',
+ '_write_64',
+ '_write_words',
+ 'add_to_vcd_trace',
+ 'build',
+ 'default_vcd_filename',
+ 'eval',
+ 'flush_vcd_trace',
+ 'reload_dump_file',
+ 'send_signal_to_gtkwave',
+ 'send_signals_to_gtkwave',
+ 'start_gtkwave',
+ 'start_vcd_trace',
+ 'stop_gtkwave',
+ 'stop_vcd_trace']
+sim.json_data : 
+None
+sim.io : 
+<pyverilator.pyverilator.IO object at 0x7f55f2995cd0>
+['chk_3', 'clk', 'out', 'rstn']
+sim.internal_signals : 
+[]
+sim.internals : 
+<pyverilator.pyverilator.Internals object at 0x7f55f297bd60>
+[]

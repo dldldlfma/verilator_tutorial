@@ -39,7 +39,7 @@ TARGET=cnt
 default:
 	@echo "-- Verilator hello-world simple example"
 	@echo "-- VERILATE & BUILD --------"
-	$(VERILATOR) -cc --exe --build -j --trace $(TARGET).v sim_main.cpp
+	$(VERILATOR) -cc --exe --build -j --trace $(TARGET).v sim_main.cpp --xml-only --xml-output out.xml
 	@echo "-- RUN ---------------------"
 	obj_dir/V$(TARGET)
 	@echo "-- DONE --------------------"
