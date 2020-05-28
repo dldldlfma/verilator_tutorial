@@ -17,8 +17,7 @@ Verilator의 기본적인 사용법을 정리한다.
 
 	이 과정을 수행하는데 있어 필요한 library는 아래 명령으로 설치한다. 
 
-	```python
-	pip3 install xmltodict
-
-	```
+```python
+pip3 install xmltodict
+```
 
