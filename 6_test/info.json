@@ -1,0 +1,3456 @@
+{
+    "verilator_xml": {
+        "files": {
+            "file": [
+                {
+                    "@id": "a",
+                    "@filename": "<built-in>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "b",
+                    "@filename": "<command-line>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "c",
+                    "@filename": "connection_test.v",
+                    "@language": "1800-2017"
+                }
+            ]
+        },
+        "module_files": {
+            "file": {
+                "@id": "c",
+                "@filename": "connection_test.v",
+                "@language": "1800-2017"
+            }
+        },
+        "cells": {
+            "cell": {
+                "@fl": "c1",
+                "@loc": "c,1,8,1,23",
+                "@name": "connection_test",
+                "@submodname": "connection_test",
+                "@hier": "connection_test",
+                "cell": [
+                    {
+                        "@fl": "c20",
+                        "@loc": "c,20,8,20,18",
+                        "@name": "u_master_0",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_0"
+                    },
+                    {
+                        "@fl": "c37",
+                        "@loc": "c,37,8,37,18",
+                        "@name": "u_master_1",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_1"
+                    },
+                    {
+                        "@fl": "c46",
+                        "@loc": "c,46,7,46,16",
+                        "@name": "u_slave_1",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_1"
+                    },
+                    {
+                        "@fl": "c63",
+                        "@loc": "c,63,8,63,18",
+                        "@name": "u_master_2",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_2"
+                    },
+                    {
+                        "@fl": "c72",
+                        "@loc": "c,72,7,72,16",
+                        "@name": "u_slave_2",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_2"
+                    },
+                    {
+                        "@fl": "c85",
+                        "@loc": "c,85,8,85,18",
+                        "@name": "u_master_3",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_3"
+                    },
+                    {
+                        "@fl": "c94",
+                        "@loc": "c,94,7,94,16",
+                        "@name": "u_slave_3",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_3"
+                    }
+                ]
+            }
+        },
+        "netlist": {
+            "module": [
+                {
+                    "@fl": "c1",
+                    "@loc": "c,1,8,1,23",
+                    "@name": "connection_test",
+                    "@origName": "connection_test",
+                    "@topModule": "1",
+                    "var": [
+                        {
+                            "@fl": "c2",
+                            "@loc": "c,2,16,2,23",
+                            "@name": "i_clock",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clock"
+                        },
+                        {
+                            "@fl": "c3",
+                            "@loc": "c,3,16,3,24",
+                            "@name": "i_resetn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_resetn"
+                        },
+                        {
+                            "@fl": "c4",
+                            "@loc": "c,4,24,4,38",
+                            "@name": "o_test_0_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_valid"
+                        },
+                        {
+                            "@fl": "c5",
+                            "@loc": "c,5,24,5,38",
+                            "@name": "i_test_0_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_ready"
+                        },
+                        {
+                            "@fl": "c6",
+                            "@loc": "c,6,24,6,38",
+                            "@name": "o_test_0_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_wdata"
+                        },
+                        {
+                            "@fl": "c7",
+                            "@loc": "c,7,24,7,38",
+                            "@name": "i_test_0_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_rdata"
+                        },
+                        {
+                            "@fl": "c9",
+                            "@loc": "c,9,24,9,38",
+                            "@name": "o_test_2_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_valid"
+                        },
+                        {
+                            "@fl": "c10",
+                            "@loc": "c,10,24,10,38",
+                            "@name": "o_test_2_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_wdata"
+                        },
+                        {
+                            "@fl": "c11",
+                            "@loc": "c,11,24,11,38",
+                            "@name": "i_test_2_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_2_rdata"
+                        },
+                        {
+                            "@fl": "c13",
+                            "@loc": "c,13,24,13,38",
+                            "@name": "o_test_3_wdata",
+                            "@dtype_id": "3",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_3_wdata"
+                        },
+                        {
+                            "@fl": "c14",
+                            "@loc": "c,14,24,14,38",
+                            "@name": "i_test_3_rdata",
+                            "@dtype_id": "3",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_3_rdata"
+                        },
+                        {
+                            "@fl": "c32",
+                            "@loc": "c,32,13,32,25",
+                            "@name": "test_1_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_valid"
+                        },
+                        {
+                            "@fl": "c33",
+                            "@loc": "c,33,13,33,25",
+                            "@name": "test_1_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_ready"
+                        },
+                        {
+                            "@fl": "c34",
+                            "@loc": "c,34,13,34,25",
+                            "@name": "test_1_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_wdata"
+                        },
+                        {
+                            "@fl": "c35",
+                            "@loc": "c,35,13,35,25",
+                            "@name": "test_1_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_rdata"
+                        },
+                        {
+                            "@fl": "c58",
+                            "@loc": "c,58,13,58,25",
+                            "@name": "test_2_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_valid"
+                        },
+                        {
+                            "@fl": "c59",
+                            "@loc": "c,59,13,59,25",
+                            "@name": "test_2_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_ready"
+                        },
+                        {
+                            "@fl": "c60",
+                            "@loc": "c,60,13,60,25",
+                            "@name": "test_2_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_wdata"
+                        },
+                        {
+                            "@fl": "c61",
+                            "@loc": "c,61,13,61,25",
+                            "@name": "test_2_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_rdata"
+                        },
+                        {
+                            "@fl": "c84",
+                            "@loc": "c,84,13,84,16",
+                            "@name": "tmp",
+                            "@dtype_id": "3",
+                            "@vartype": "logic",
+                            "@origName": "tmp"
+                        }
+                    ],
+                    "instance": [
+                        {
+                            "@fl": "c20",
+                            "@loc": "c,20,8,20,18",
+                            "@name": "u_master_0",
+                            "@defName": "master",
+                            "@origName": "u_master_0",
+                            "port": [
+                                {
+                                    "@fl": "c21",
+                                    "@loc": "c,21,6,21,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c21",
+                                        "@loc": "c,21,18,21,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c22",
+                                    "@loc": "c,22,6,22,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c22",
+                                        "@loc": "c,22,18,22,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c23",
+                                    "@loc": "c,23,6,23,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c23",
+                                        "@loc": "c,23,18,23,32",
+                                        "@name": "o_test_0_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c24",
+                                    "@loc": "c,24,6,24,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c24",
+                                        "@loc": "c,24,18,24,32",
+                                        "@name": "i_test_0_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c25",
+                                    "@loc": "c,25,6,25,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c25",
+                                        "@loc": "c,25,18,25,32",
+                                        "@name": "o_test_0_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c26",
+                                    "@loc": "c,26,6,26,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c26",
+                                        "@loc": "c,26,18,26,32",
+                                        "@name": "i_test_0_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c37",
+                            "@loc": "c,37,8,37,18",
+                            "@name": "u_master_1",
+                            "@defName": "master",
+                            "@origName": "u_master_1",
+                            "port": [
+                                {
+                                    "@fl": "c38",
+                                    "@loc": "c,38,6,38,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c38",
+                                        "@loc": "c,38,18,38,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c39",
+                                    "@loc": "c,39,6,39,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c39",
+                                        "@loc": "c,39,18,39,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c40",
+                                    "@loc": "c,40,6,40,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c40",
+                                        "@loc": "c,40,18,40,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c41",
+                                    "@loc": "c,41,6,41,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c41",
+                                        "@loc": "c,41,18,41,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c42",
+                                    "@loc": "c,42,6,42,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c42",
+                                        "@loc": "c,42,18,42,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c43",
+                                    "@loc": "c,43,6,43,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c43",
+                                        "@loc": "c,43,18,43,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c46",
+                            "@loc": "c,46,7,46,16",
+                            "@name": "u_slave_1",
+                            "@defName": "slave",
+                            "@origName": "u_slave_1",
+                            "port": [
+                                {
+                                    "@fl": "c47",
+                                    "@loc": "c,47,6,47,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c47",
+                                        "@loc": "c,47,18,47,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c48",
+                                    "@loc": "c,48,6,48,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c48",
+                                        "@loc": "c,48,18,48,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c49",
+                                    "@loc": "c,49,6,49,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c49",
+                                        "@loc": "c,49,18,49,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c50",
+                                    "@loc": "c,50,6,50,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c50",
+                                        "@loc": "c,50,18,50,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c51",
+                                    "@loc": "c,51,6,51,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c51",
+                                        "@loc": "c,51,18,51,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c52",
+                                    "@loc": "c,52,6,52,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c52",
+                                        "@loc": "c,52,18,52,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c63",
+                            "@loc": "c,63,8,63,18",
+                            "@name": "u_master_2",
+                            "@defName": "master",
+                            "@origName": "u_master_2",
+                            "port": [
+                                {
+                                    "@fl": "c64",
+                                    "@loc": "c,64,6,64,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c64",
+                                        "@loc": "c,64,18,64,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c65",
+                                    "@loc": "c,65,6,65,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c65",
+                                        "@loc": "c,65,18,65,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c66",
+                                    "@loc": "c,66,6,66,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c66",
+                                        "@loc": "c,66,18,66,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c67",
+                                    "@loc": "c,67,6,67,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c68",
+                                    "@loc": "c,68,6,68,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c68",
+                                        "@loc": "c,68,18,68,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c69",
+                                    "@loc": "c,69,6,69,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c69",
+                                        "@loc": "c,69,18,69,32",
+                                        "@name": "i_test_2_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c72",
+                            "@loc": "c,72,7,72,16",
+                            "@name": "u_slave_2",
+                            "@defName": "slave",
+                            "@origName": "u_slave_2",
+                            "port": [
+                                {
+                                    "@fl": "c73",
+                                    "@loc": "c,73,6,73,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c73",
+                                        "@loc": "c,73,18,73,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c74",
+                                    "@loc": "c,74,6,74,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c74",
+                                        "@loc": "c,74,18,74,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c75",
+                                    "@loc": "c,75,6,75,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c75",
+                                        "@loc": "c,75,18,75,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c76",
+                                    "@loc": "c,76,6,76,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c77",
+                                    "@loc": "c,77,6,77,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c77",
+                                        "@loc": "c,77,18,77,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c78",
+                                    "@loc": "c,78,6,78,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c85",
+                            "@loc": "c,85,8,85,18",
+                            "@name": "u_master_3",
+                            "@defName": "master",
+                            "@origName": "u_master_3",
+                            "port": [
+                                {
+                                    "@fl": "c86",
+                                    "@loc": "c,86,6,86,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c86",
+                                        "@loc": "c,86,18,86,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c87",
+                                    "@loc": "c,87,6,87,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c87",
+                                        "@loc": "c,87,18,87,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c88",
+                                    "@loc": "c,88,6,88,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c89",
+                                    "@loc": "c,89,6,89,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c90",
+                                    "@loc": "c,90,6,90,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c90",
+                                        "@loc": "c,90,43,90,44",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,33,90,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,19,90,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,37,90,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,34,90,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,39,90,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,40,90,43",
+                                                "@name": "tmp",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,58,90,59",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,44,90,58",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,61,90,62",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,59,90,60",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c91",
+                                    "@loc": "c,91,6,91,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "replicate": {
+                                        "@fl": "c91",
+                                        "@loc": "c,91,20,91,21",
+                                        "@dtype_id": "2",
+                                        "varref": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,21,91,35",
+                                            "@name": "i_test_3_rdata",
+                                            "@dtype_id": "3"
+                                        },
+                                        "const": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,19,91,20",
+                                            "@name": "32'sh2",
+                                            "@dtype_id": "7"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c94",
+                            "@loc": "c,94,7,94,16",
+                            "@name": "u_slave_3",
+                            "@defName": "slave",
+                            "@origName": "u_slave_3",
+                            "port": [
+                                {
+                                    "@fl": "c95",
+                                    "@loc": "c,95,6,95,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c95",
+                                        "@loc": "c,95,18,95,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c96",
+                                    "@loc": "c,96,6,96,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c96",
+                                        "@loc": "c,96,18,96,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c97",
+                                    "@loc": "c,97,6,97,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c98",
+                                    "@loc": "c,98,6,98,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c99",
+                                    "@loc": "c,99,6,99,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c99",
+                                        "@loc": "c,99,60,99,61",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,33,99,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,19,99,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,37,99,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,34,99,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,39,99,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,40,99,54",
+                                                "@name": "i_test_3_rdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,75,99,76",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,61,99,75",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,78,99,79",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,76,99,77",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c100",
+                                    "@loc": "c,100,6,100,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c105",
+                    "@loc": "c,105,8,105,14",
+                    "@name": "master",
+                    "@origName": "master",
+                    "var": [
+                        {
+                            "@fl": "c106",
+                            "@loc": "c,106,20,106,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c107",
+                            "@loc": "c,107,20,107,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c108",
+                            "@loc": "c,108,20,108,27",
+                            "@name": "o_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_valid"
+                        },
+                        {
+                            "@fl": "c109",
+                            "@loc": "c,109,20,109,27",
+                            "@name": "i_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_ready"
+                        },
+                        {
+                            "@fl": "c110",
+                            "@loc": "c,110,20,110,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        },
+                        {
+                            "@fl": "c111",
+                            "@loc": "c,111,20,111,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c116",
+                    "@loc": "c,116,8,116,13",
+                    "@name": "slave",
+                    "@origName": "slave",
+                    "var": [
+                        {
+                            "@fl": "c117",
+                            "@loc": "c,117,20,117,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c118",
+                            "@loc": "c,118,20,118,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c119",
+                            "@loc": "c,119,20,119,27",
+                            "@name": "i_valid",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_valid"
+                        },
+                        {
+                            "@fl": "c120",
+                            "@loc": "c,120,20,120,27",
+                            "@name": "o_ready",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_ready"
+                        },
+                        {
+                            "@fl": "c121",
+                            "@loc": "c,121,20,121,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        },
+                        {
+                            "@fl": "c122",
+                            "@loc": "c,122,20,122,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        }
+                    ]
+                }
+            ],
+            "typetable": {
+                "@fl": "a0",
+                "@loc": "a,0,0,0,0",
+                "basicdtype": [
+                    {
+                        "@fl": "c117",
+                        "@loc": "c,117,20,117,25",
+                        "@id": "1",
+                        "@name": "logic"
+                    },
+                    {
+                        "@fl": "c6",
+                        "@loc": "c,6,17,6,18",
+                        "@id": "2",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c13",
+                        "@loc": "c,13,17,13,18",
+                        "@id": "3",
+                        "@name": "logic",
+                        "@left": "15",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "4",
+                        "@name": "logic",
+                        "@left": "7",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "5",
+                        "@name": "logic",
+                        "@left": "3",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,39,90,40",
+                        "@id": "6",
+                        "@name": "logic",
+                        "@left": "23",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c91",
+                        "@loc": "c,91,19,91,20",
+                        "@id": "7",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    }
+                ]
+            }
+        }
+    }
+}
+{
+    "verilator_xml": {
+        "files": {
+            "file": [
+                {
+                    "@id": "a",
+                    "@filename": "<built-in>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "b",
+                    "@filename": "<command-line>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "c",
+                    "@filename": "connection_test.v",
+                    "@language": "1800-2017"
+                }
+            ]
+        },
+        "module_files": {
+            "file": {
+                "@id": "c",
+                "@filename": "connection_test.v",
+                "@language": "1800-2017"
+            }
+        },
+        "cells": {
+            "cell": {
+                "@fl": "c1",
+                "@loc": "c,1,8,1,23",
+                "@name": "connection_test",
+                "@submodname": "connection_test",
+                "@hier": "connection_test",
+                "cell": [
+                    {
+                        "@fl": "c20",
+                        "@loc": "c,20,8,20,18",
+                        "@name": "u_master_0",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_0"
+                    },
+                    {
+                        "@fl": "c37",
+                        "@loc": "c,37,8,37,18",
+                        "@name": "u_master_1",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_1"
+                    },
+                    {
+                        "@fl": "c46",
+                        "@loc": "c,46,7,46,16",
+                        "@name": "u_slave_1",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_1"
+                    },
+                    {
+                        "@fl": "c63",
+                        "@loc": "c,63,8,63,18",
+                        "@name": "u_master_2",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_2"
+                    },
+                    {
+                        "@fl": "c72",
+                        "@loc": "c,72,7,72,16",
+                        "@name": "u_slave_2",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_2"
+                    },
+                    {
+                        "@fl": "c85",
+                        "@loc": "c,85,8,85,18",
+                        "@name": "u_master_3",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_3"
+                    },
+                    {
+                        "@fl": "c94",
+                        "@loc": "c,94,7,94,16",
+                        "@name": "u_slave_3",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_3"
+                    }
+                ]
+            }
+        },
+        "netlist": {
+            "module": [
+                {
+                    "@fl": "c1",
+                    "@loc": "c,1,8,1,23",
+                    "@name": "connection_test",
+                    "@origName": "connection_test",
+                    "@topModule": "1",
+                    "var": [
+                        {
+                            "@fl": "c2",
+                            "@loc": "c,2,16,2,23",
+                            "@name": "i_clock",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clock"
+                        },
+                        {
+                            "@fl": "c3",
+                            "@loc": "c,3,16,3,24",
+                            "@name": "i_resetn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_resetn"
+                        },
+                        {
+                            "@fl": "c4",
+                            "@loc": "c,4,24,4,38",
+                            "@name": "o_test_0_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_valid"
+                        },
+                        {
+                            "@fl": "c5",
+                            "@loc": "c,5,24,5,38",
+                            "@name": "i_test_0_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_ready"
+                        },
+                        {
+                            "@fl": "c6",
+                            "@loc": "c,6,24,6,38",
+                            "@name": "o_test_0_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_wdata"
+                        },
+                        {
+                            "@fl": "c7",
+                            "@loc": "c,7,24,7,38",
+                            "@name": "i_test_0_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_rdata"
+                        },
+                        {
+                            "@fl": "c9",
+                            "@loc": "c,9,24,9,38",
+                            "@name": "o_test_2_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_valid"
+                        },
+                        {
+                            "@fl": "c10",
+                            "@loc": "c,10,24,10,38",
+                            "@name": "o_test_2_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_wdata"
+                        },
+                        {
+                            "@fl": "c11",
+                            "@loc": "c,11,24,11,38",
+                            "@name": "i_test_2_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_2_rdata"
+                        },
+                        {
+                            "@fl": "c13",
+                            "@loc": "c,13,24,13,38",
+                            "@name": "o_test_3_wdata",
+                            "@dtype_id": "3",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_3_wdata"
+                        },
+                        {
+                            "@fl": "c14",
+                            "@loc": "c,14,24,14,38",
+                            "@name": "i_test_3_rdata",
+                            "@dtype_id": "3",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_3_rdata"
+                        },
+                        {
+                            "@fl": "c32",
+                            "@loc": "c,32,13,32,25",
+                            "@name": "test_1_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_valid"
+                        },
+                        {
+                            "@fl": "c33",
+                            "@loc": "c,33,13,33,25",
+                            "@name": "test_1_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_ready"
+                        },
+                        {
+                            "@fl": "c34",
+                            "@loc": "c,34,13,34,25",
+                            "@name": "test_1_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_wdata"
+                        },
+                        {
+                            "@fl": "c35",
+                            "@loc": "c,35,13,35,25",
+                            "@name": "test_1_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_rdata"
+                        },
+                        {
+                            "@fl": "c58",
+                            "@loc": "c,58,13,58,25",
+                            "@name": "test_2_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_valid"
+                        },
+                        {
+                            "@fl": "c59",
+                            "@loc": "c,59,13,59,25",
+                            "@name": "test_2_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_ready"
+                        },
+                        {
+                            "@fl": "c60",
+                            "@loc": "c,60,13,60,25",
+                            "@name": "test_2_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_wdata"
+                        },
+                        {
+                            "@fl": "c61",
+                            "@loc": "c,61,13,61,25",
+                            "@name": "test_2_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_rdata"
+                        },
+                        {
+                            "@fl": "c84",
+                            "@loc": "c,84,13,84,16",
+                            "@name": "tmp",
+                            "@dtype_id": "3",
+                            "@vartype": "logic",
+                            "@origName": "tmp"
+                        }
+                    ],
+                    "instance": [
+                        {
+                            "@fl": "c20",
+                            "@loc": "c,20,8,20,18",
+                            "@name": "u_master_0",
+                            "@defName": "master",
+                            "@origName": "u_master_0",
+                            "port": [
+                                {
+                                    "@fl": "c21",
+                                    "@loc": "c,21,6,21,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c21",
+                                        "@loc": "c,21,18,21,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c22",
+                                    "@loc": "c,22,6,22,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c22",
+                                        "@loc": "c,22,18,22,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c23",
+                                    "@loc": "c,23,6,23,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c23",
+                                        "@loc": "c,23,18,23,32",
+                                        "@name": "o_test_0_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c24",
+                                    "@loc": "c,24,6,24,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c24",
+                                        "@loc": "c,24,18,24,32",
+                                        "@name": "i_test_0_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c25",
+                                    "@loc": "c,25,6,25,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c25",
+                                        "@loc": "c,25,18,25,32",
+                                        "@name": "o_test_0_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c26",
+                                    "@loc": "c,26,6,26,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c26",
+                                        "@loc": "c,26,18,26,32",
+                                        "@name": "i_test_0_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c37",
+                            "@loc": "c,37,8,37,18",
+                            "@name": "u_master_1",
+                            "@defName": "master",
+                            "@origName": "u_master_1",
+                            "port": [
+                                {
+                                    "@fl": "c38",
+                                    "@loc": "c,38,6,38,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c38",
+                                        "@loc": "c,38,18,38,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c39",
+                                    "@loc": "c,39,6,39,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c39",
+                                        "@loc": "c,39,18,39,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c40",
+                                    "@loc": "c,40,6,40,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c40",
+                                        "@loc": "c,40,18,40,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c41",
+                                    "@loc": "c,41,6,41,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c41",
+                                        "@loc": "c,41,18,41,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c42",
+                                    "@loc": "c,42,6,42,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c42",
+                                        "@loc": "c,42,18,42,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c43",
+                                    "@loc": "c,43,6,43,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c43",
+                                        "@loc": "c,43,18,43,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c46",
+                            "@loc": "c,46,7,46,16",
+                            "@name": "u_slave_1",
+                            "@defName": "slave",
+                            "@origName": "u_slave_1",
+                            "port": [
+                                {
+                                    "@fl": "c47",
+                                    "@loc": "c,47,6,47,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c47",
+                                        "@loc": "c,47,18,47,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c48",
+                                    "@loc": "c,48,6,48,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c48",
+                                        "@loc": "c,48,18,48,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c49",
+                                    "@loc": "c,49,6,49,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c49",
+                                        "@loc": "c,49,18,49,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c50",
+                                    "@loc": "c,50,6,50,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c50",
+                                        "@loc": "c,50,18,50,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c51",
+                                    "@loc": "c,51,6,51,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c51",
+                                        "@loc": "c,51,18,51,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c52",
+                                    "@loc": "c,52,6,52,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c52",
+                                        "@loc": "c,52,18,52,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c63",
+                            "@loc": "c,63,8,63,18",
+                            "@name": "u_master_2",
+                            "@defName": "master",
+                            "@origName": "u_master_2",
+                            "port": [
+                                {
+                                    "@fl": "c64",
+                                    "@loc": "c,64,6,64,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c64",
+                                        "@loc": "c,64,18,64,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c65",
+                                    "@loc": "c,65,6,65,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c65",
+                                        "@loc": "c,65,18,65,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c66",
+                                    "@loc": "c,66,6,66,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c66",
+                                        "@loc": "c,66,18,66,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c67",
+                                    "@loc": "c,67,6,67,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c68",
+                                    "@loc": "c,68,6,68,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c68",
+                                        "@loc": "c,68,18,68,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c69",
+                                    "@loc": "c,69,6,69,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c69",
+                                        "@loc": "c,69,18,69,32",
+                                        "@name": "i_test_2_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c72",
+                            "@loc": "c,72,7,72,16",
+                            "@name": "u_slave_2",
+                            "@defName": "slave",
+                            "@origName": "u_slave_2",
+                            "port": [
+                                {
+                                    "@fl": "c73",
+                                    "@loc": "c,73,6,73,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c73",
+                                        "@loc": "c,73,18,73,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c74",
+                                    "@loc": "c,74,6,74,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c74",
+                                        "@loc": "c,74,18,74,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c75",
+                                    "@loc": "c,75,6,75,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c75",
+                                        "@loc": "c,75,18,75,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c76",
+                                    "@loc": "c,76,6,76,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c77",
+                                    "@loc": "c,77,6,77,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c77",
+                                        "@loc": "c,77,18,77,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c78",
+                                    "@loc": "c,78,6,78,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c85",
+                            "@loc": "c,85,8,85,18",
+                            "@name": "u_master_3",
+                            "@defName": "master",
+                            "@origName": "u_master_3",
+                            "port": [
+                                {
+                                    "@fl": "c86",
+                                    "@loc": "c,86,6,86,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c86",
+                                        "@loc": "c,86,18,86,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c87",
+                                    "@loc": "c,87,6,87,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c87",
+                                        "@loc": "c,87,18,87,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c88",
+                                    "@loc": "c,88,6,88,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c89",
+                                    "@loc": "c,89,6,89,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c90",
+                                    "@loc": "c,90,6,90,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c90",
+                                        "@loc": "c,90,43,90,44",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,33,90,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,19,90,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,37,90,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,34,90,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,39,90,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,40,90,43",
+                                                "@name": "tmp",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,58,90,59",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,44,90,58",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,61,90,62",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,59,90,60",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c91",
+                                    "@loc": "c,91,6,91,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "replicate": {
+                                        "@fl": "c91",
+                                        "@loc": "c,91,20,91,21",
+                                        "@dtype_id": "2",
+                                        "varref": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,21,91,35",
+                                            "@name": "i_test_3_rdata",
+                                            "@dtype_id": "3"
+                                        },
+                                        "const": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,19,91,20",
+                                            "@name": "32'sh2",
+                                            "@dtype_id": "7"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c94",
+                            "@loc": "c,94,7,94,16",
+                            "@name": "u_slave_3",
+                            "@defName": "slave",
+                            "@origName": "u_slave_3",
+                            "port": [
+                                {
+                                    "@fl": "c95",
+                                    "@loc": "c,95,6,95,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c95",
+                                        "@loc": "c,95,18,95,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c96",
+                                    "@loc": "c,96,6,96,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c96",
+                                        "@loc": "c,96,18,96,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c97",
+                                    "@loc": "c,97,6,97,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c98",
+                                    "@loc": "c,98,6,98,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c99",
+                                    "@loc": "c,99,6,99,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c99",
+                                        "@loc": "c,99,60,99,61",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,33,99,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,19,99,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,37,99,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,34,99,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,39,99,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,40,99,54",
+                                                "@name": "i_test_3_rdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,75,99,76",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,61,99,75",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,78,99,79",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,76,99,77",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c100",
+                                    "@loc": "c,100,6,100,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c105",
+                    "@loc": "c,105,8,105,14",
+                    "@name": "master",
+                    "@origName": "master",
+                    "var": [
+                        {
+                            "@fl": "c106",
+                            "@loc": "c,106,20,106,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c107",
+                            "@loc": "c,107,20,107,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c108",
+                            "@loc": "c,108,20,108,27",
+                            "@name": "o_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_valid"
+                        },
+                        {
+                            "@fl": "c109",
+                            "@loc": "c,109,20,109,27",
+                            "@name": "i_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_ready"
+                        },
+                        {
+                            "@fl": "c110",
+                            "@loc": "c,110,20,110,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        },
+                        {
+                            "@fl": "c111",
+                            "@loc": "c,111,20,111,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c116",
+                    "@loc": "c,116,8,116,13",
+                    "@name": "slave",
+                    "@origName": "slave",
+                    "var": [
+                        {
+                            "@fl": "c117",
+                            "@loc": "c,117,20,117,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c118",
+                            "@loc": "c,118,20,118,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c119",
+                            "@loc": "c,119,20,119,27",
+                            "@name": "i_valid",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_valid"
+                        },
+                        {
+                            "@fl": "c120",
+                            "@loc": "c,120,20,120,27",
+                            "@name": "o_ready",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_ready"
+                        },
+                        {
+                            "@fl": "c121",
+                            "@loc": "c,121,20,121,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        },
+                        {
+                            "@fl": "c122",
+                            "@loc": "c,122,20,122,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        }
+                    ]
+                }
+            ],
+            "typetable": {
+                "@fl": "a0",
+                "@loc": "a,0,0,0,0",
+                "basicdtype": [
+                    {
+                        "@fl": "c117",
+                        "@loc": "c,117,20,117,25",
+                        "@id": "1",
+                        "@name": "logic"
+                    },
+                    {
+                        "@fl": "c6",
+                        "@loc": "c,6,17,6,18",
+                        "@id": "2",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c13",
+                        "@loc": "c,13,17,13,18",
+                        "@id": "3",
+                        "@name": "logic",
+                        "@left": "15",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "4",
+                        "@name": "logic",
+                        "@left": "7",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "5",
+                        "@name": "logic",
+                        "@left": "3",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,39,90,40",
+                        "@id": "6",
+                        "@name": "logic",
+                        "@left": "23",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c91",
+                        "@loc": "c,91,19,91,20",
+                        "@id": "7",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    }
+                ]
+            }
+        }
+    }
+}
+{
+    "verilator_xml": {
+        "files": {
+            "file": [
+                {
+                    "@id": "a",
+                    "@filename": "<built-in>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "b",
+                    "@filename": "<command-line>",
+                    "@language": "1800-2017"
+                },
+                {
+                    "@id": "c",
+                    "@filename": "connection_test.v",
+                    "@language": "1800-2017"
+                }
+            ]
+        },
+        "module_files": {
+            "file": {
+                "@id": "c",
+                "@filename": "connection_test.v",
+                "@language": "1800-2017"
+            }
+        },
+        "cells": {
+            "cell": {
+                "@fl": "c1",
+                "@loc": "c,1,8,1,23",
+                "@name": "connection_test",
+                "@submodname": "connection_test",
+                "@hier": "connection_test",
+                "cell": [
+                    {
+                        "@fl": "c20",
+                        "@loc": "c,20,8,20,18",
+                        "@name": "u_master_0",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_0"
+                    },
+                    {
+                        "@fl": "c37",
+                        "@loc": "c,37,8,37,18",
+                        "@name": "u_master_1",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_1"
+                    },
+                    {
+                        "@fl": "c46",
+                        "@loc": "c,46,7,46,16",
+                        "@name": "u_slave_1",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_1"
+                    },
+                    {
+                        "@fl": "c63",
+                        "@loc": "c,63,8,63,18",
+                        "@name": "u_master_2",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_2"
+                    },
+                    {
+                        "@fl": "c72",
+                        "@loc": "c,72,7,72,16",
+                        "@name": "u_slave_2",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_2"
+                    },
+                    {
+                        "@fl": "c85",
+                        "@loc": "c,85,8,85,18",
+                        "@name": "u_master_3",
+                        "@submodname": "master",
+                        "@hier": "connection_test.u_master_3"
+                    },
+                    {
+                        "@fl": "c94",
+                        "@loc": "c,94,7,94,16",
+                        "@name": "u_slave_3",
+                        "@submodname": "slave",
+                        "@hier": "connection_test.u_slave_3"
+                    }
+                ]
+            }
+        },
+        "netlist": {
+            "module": [
+                {
+                    "@fl": "c1",
+                    "@loc": "c,1,8,1,23",
+                    "@name": "connection_test",
+                    "@origName": "connection_test",
+                    "@topModule": "1",
+                    "var": [
+                        {
+                            "@fl": "c2",
+                            "@loc": "c,2,16,2,23",
+                            "@name": "i_clock",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clock"
+                        },
+                        {
+                            "@fl": "c3",
+                            "@loc": "c,3,16,3,24",
+                            "@name": "i_resetn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_resetn"
+                        },
+                        {
+                            "@fl": "c4",
+                            "@loc": "c,4,24,4,38",
+                            "@name": "o_test_0_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_valid"
+                        },
+                        {
+                            "@fl": "c5",
+                            "@loc": "c,5,24,5,38",
+                            "@name": "i_test_0_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_ready"
+                        },
+                        {
+                            "@fl": "c6",
+                            "@loc": "c,6,24,6,38",
+                            "@name": "o_test_0_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_0_wdata"
+                        },
+                        {
+                            "@fl": "c7",
+                            "@loc": "c,7,24,7,38",
+                            "@name": "i_test_0_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_0_rdata"
+                        },
+                        {
+                            "@fl": "c9",
+                            "@loc": "c,9,24,9,38",
+                            "@name": "o_test_2_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_valid"
+                        },
+                        {
+                            "@fl": "c10",
+                            "@loc": "c,10,24,10,38",
+                            "@name": "o_test_2_wdata",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_2_wdata"
+                        },
+                        {
+                            "@fl": "c11",
+                            "@loc": "c,11,24,11,38",
+                            "@name": "i_test_2_rdata",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_2_rdata"
+                        },
+                        {
+                            "@fl": "c13",
+                            "@loc": "c,13,24,13,38",
+                            "@name": "o_test_3_wdata",
+                            "@dtype_id": "3",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_test_3_wdata"
+                        },
+                        {
+                            "@fl": "c14",
+                            "@loc": "c,14,24,14,38",
+                            "@name": "i_test_3_rdata",
+                            "@dtype_id": "3",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_test_3_rdata"
+                        },
+                        {
+                            "@fl": "c32",
+                            "@loc": "c,32,13,32,25",
+                            "@name": "test_1_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_valid"
+                        },
+                        {
+                            "@fl": "c33",
+                            "@loc": "c,33,13,33,25",
+                            "@name": "test_1_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_1_ready"
+                        },
+                        {
+                            "@fl": "c34",
+                            "@loc": "c,34,13,34,25",
+                            "@name": "test_1_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_wdata"
+                        },
+                        {
+                            "@fl": "c35",
+                            "@loc": "c,35,13,35,25",
+                            "@name": "test_1_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_1_rdata"
+                        },
+                        {
+                            "@fl": "c58",
+                            "@loc": "c,58,13,58,25",
+                            "@name": "test_2_valid",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_valid"
+                        },
+                        {
+                            "@fl": "c59",
+                            "@loc": "c,59,13,59,25",
+                            "@name": "test_2_ready",
+                            "@dtype_id": "1",
+                            "@vartype": "logic",
+                            "@origName": "test_2_ready"
+                        },
+                        {
+                            "@fl": "c60",
+                            "@loc": "c,60,13,60,25",
+                            "@name": "test_2_wdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_wdata"
+                        },
+                        {
+                            "@fl": "c61",
+                            "@loc": "c,61,13,61,25",
+                            "@name": "test_2_rdata",
+                            "@dtype_id": "2",
+                            "@vartype": "logic",
+                            "@origName": "test_2_rdata"
+                        },
+                        {
+                            "@fl": "c84",
+                            "@loc": "c,84,13,84,16",
+                            "@name": "tmp",
+                            "@dtype_id": "3",
+                            "@vartype": "logic",
+                            "@origName": "tmp"
+                        }
+                    ],
+                    "instance": [
+                        {
+                            "@fl": "c20",
+                            "@loc": "c,20,8,20,18",
+                            "@name": "u_master_0",
+                            "@defName": "master",
+                            "@origName": "u_master_0",
+                            "port": [
+                                {
+                                    "@fl": "c21",
+                                    "@loc": "c,21,6,21,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c21",
+                                        "@loc": "c,21,18,21,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c22",
+                                    "@loc": "c,22,6,22,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c22",
+                                        "@loc": "c,22,18,22,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c23",
+                                    "@loc": "c,23,6,23,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c23",
+                                        "@loc": "c,23,18,23,32",
+                                        "@name": "o_test_0_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c24",
+                                    "@loc": "c,24,6,24,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c24",
+                                        "@loc": "c,24,18,24,32",
+                                        "@name": "i_test_0_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c25",
+                                    "@loc": "c,25,6,25,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c25",
+                                        "@loc": "c,25,18,25,32",
+                                        "@name": "o_test_0_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c26",
+                                    "@loc": "c,26,6,26,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c26",
+                                        "@loc": "c,26,18,26,32",
+                                        "@name": "i_test_0_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c37",
+                            "@loc": "c,37,8,37,18",
+                            "@name": "u_master_1",
+                            "@defName": "master",
+                            "@origName": "u_master_1",
+                            "port": [
+                                {
+                                    "@fl": "c38",
+                                    "@loc": "c,38,6,38,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c38",
+                                        "@loc": "c,38,18,38,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c39",
+                                    "@loc": "c,39,6,39,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c39",
+                                        "@loc": "c,39,18,39,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c40",
+                                    "@loc": "c,40,6,40,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c40",
+                                        "@loc": "c,40,18,40,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c41",
+                                    "@loc": "c,41,6,41,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c41",
+                                        "@loc": "c,41,18,41,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c42",
+                                    "@loc": "c,42,6,42,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c42",
+                                        "@loc": "c,42,18,42,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c43",
+                                    "@loc": "c,43,6,43,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c43",
+                                        "@loc": "c,43,18,43,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c46",
+                            "@loc": "c,46,7,46,16",
+                            "@name": "u_slave_1",
+                            "@defName": "slave",
+                            "@origName": "u_slave_1",
+                            "port": [
+                                {
+                                    "@fl": "c47",
+                                    "@loc": "c,47,6,47,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c47",
+                                        "@loc": "c,47,18,47,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c48",
+                                    "@loc": "c,48,6,48,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c48",
+                                        "@loc": "c,48,18,48,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c49",
+                                    "@loc": "c,49,6,49,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c49",
+                                        "@loc": "c,49,18,49,30",
+                                        "@name": "test_1_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c50",
+                                    "@loc": "c,50,6,50,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4",
+                                    "varref": {
+                                        "@fl": "c50",
+                                        "@loc": "c,50,18,50,30",
+                                        "@name": "test_1_ready",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c51",
+                                    "@loc": "c,51,6,51,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c51",
+                                        "@loc": "c,51,18,51,30",
+                                        "@name": "test_1_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c52",
+                                    "@loc": "c,52,6,52,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c52",
+                                        "@loc": "c,52,18,52,30",
+                                        "@name": "test_1_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c63",
+                            "@loc": "c,63,8,63,18",
+                            "@name": "u_master_2",
+                            "@defName": "master",
+                            "@origName": "u_master_2",
+                            "port": [
+                                {
+                                    "@fl": "c64",
+                                    "@loc": "c,64,6,64,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c64",
+                                        "@loc": "c,64,18,64,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c65",
+                                    "@loc": "c,65,6,65,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c65",
+                                        "@loc": "c,65,18,65,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c66",
+                                    "@loc": "c,66,6,66,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c66",
+                                        "@loc": "c,66,18,66,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c67",
+                                    "@loc": "c,67,6,67,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c68",
+                                    "@loc": "c,68,6,68,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c68",
+                                        "@loc": "c,68,18,68,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c69",
+                                    "@loc": "c,69,6,69,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "varref": {
+                                        "@fl": "c69",
+                                        "@loc": "c,69,18,69,32",
+                                        "@name": "i_test_2_rdata",
+                                        "@dtype_id": "2"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c72",
+                            "@loc": "c,72,7,72,16",
+                            "@name": "u_slave_2",
+                            "@defName": "slave",
+                            "@origName": "u_slave_2",
+                            "port": [
+                                {
+                                    "@fl": "c73",
+                                    "@loc": "c,73,6,73,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c73",
+                                        "@loc": "c,73,18,73,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c74",
+                                    "@loc": "c,74,6,74,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c74",
+                                        "@loc": "c,74,18,74,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c75",
+                                    "@loc": "c,75,6,75,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3",
+                                    "varref": {
+                                        "@fl": "c75",
+                                        "@loc": "c,75,18,75,32",
+                                        "@name": "o_test_2_valid",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c76",
+                                    "@loc": "c,76,6,76,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c77",
+                                    "@loc": "c,77,6,77,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "varref": {
+                                        "@fl": "c77",
+                                        "@loc": "c,77,18,77,32",
+                                        "@name": "o_test_2_wdata",
+                                        "@dtype_id": "2"
+                                    }
+                                },
+                                {
+                                    "@fl": "c78",
+                                    "@loc": "c,78,6,78,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c85",
+                            "@loc": "c,85,8,85,18",
+                            "@name": "u_master_3",
+                            "@defName": "master",
+                            "@origName": "u_master_3",
+                            "port": [
+                                {
+                                    "@fl": "c86",
+                                    "@loc": "c,86,6,86,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c86",
+                                        "@loc": "c,86,18,86,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c87",
+                                    "@loc": "c,87,6,87,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c87",
+                                        "@loc": "c,87,18,87,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c88",
+                                    "@loc": "c,88,6,88,13",
+                                    "@name": "o_valid",
+                                    "@direction": "out",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c89",
+                                    "@loc": "c,89,6,89,13",
+                                    "@name": "i_ready",
+                                    "@direction": "in",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c90",
+                                    "@loc": "c,90,6,90,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c90",
+                                        "@loc": "c,90,43,90,44",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,33,90,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,19,90,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,37,90,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,34,90,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c90",
+                                            "@loc": "c,90,39,90,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,40,90,43",
+                                                "@name": "tmp",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c90",
+                                                "@loc": "c,90,58,90,59",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c90",
+                                                    "@loc": "c,90,44,90,58",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,61,90,62",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c90",
+                                                        "@loc": "c,90,59,90,60",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c91",
+                                    "@loc": "c,91,6,91,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "6",
+                                    "replicate": {
+                                        "@fl": "c91",
+                                        "@loc": "c,91,20,91,21",
+                                        "@dtype_id": "2",
+                                        "varref": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,21,91,35",
+                                            "@name": "i_test_3_rdata",
+                                            "@dtype_id": "3"
+                                        },
+                                        "const": {
+                                            "@fl": "c91",
+                                            "@loc": "c,91,19,91,20",
+                                            "@name": "32'sh2",
+                                            "@dtype_id": "7"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "@fl": "c94",
+                            "@loc": "c,94,7,94,16",
+                            "@name": "u_slave_3",
+                            "@defName": "slave",
+                            "@origName": "u_slave_3",
+                            "port": [
+                                {
+                                    "@fl": "c95",
+                                    "@loc": "c,95,6,95,11",
+                                    "@name": "i_clk",
+                                    "@direction": "in",
+                                    "@portIndex": "1",
+                                    "varref": {
+                                        "@fl": "c95",
+                                        "@loc": "c,95,18,95,25",
+                                        "@name": "i_clock",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c96",
+                                    "@loc": "c,96,6,96,12",
+                                    "@name": "i_rstn",
+                                    "@direction": "in",
+                                    "@portIndex": "2",
+                                    "varref": {
+                                        "@fl": "c96",
+                                        "@loc": "c,96,18,96,26",
+                                        "@name": "i_resetn",
+                                        "@dtype_id": "1"
+                                    }
+                                },
+                                {
+                                    "@fl": "c97",
+                                    "@loc": "c,97,6,97,13",
+                                    "@name": "i_valid",
+                                    "@direction": "in",
+                                    "@portIndex": "3"
+                                },
+                                {
+                                    "@fl": "c98",
+                                    "@loc": "c,98,6,98,13",
+                                    "@name": "o_ready",
+                                    "@direction": "out",
+                                    "@portIndex": "4"
+                                },
+                                {
+                                    "@fl": "c99",
+                                    "@loc": "c,99,6,99,12",
+                                    "@name": "i_data",
+                                    "@direction": "in",
+                                    "@portIndex": "5",
+                                    "concat": {
+                                        "@fl": "c99",
+                                        "@loc": "c,99,60,99,61",
+                                        "@dtype_id": "2",
+                                        "sel": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,33,99,34",
+                                            "@dtype_id": "4",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,19,99,33",
+                                                "@name": "o_test_3_wdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "const": [
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,37,99,38",
+                                                    "@name": "4'h8",
+                                                    "@dtype_id": "5"
+                                                },
+                                                {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,34,99,36",
+                                                    "@name": "32'h8",
+                                                    "@dtype_id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "concat": {
+                                            "@fl": "c99",
+                                            "@loc": "c,99,39,99,40",
+                                            "@dtype_id": "6",
+                                            "varref": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,40,99,54",
+                                                "@name": "i_test_3_rdata",
+                                                "@dtype_id": "3"
+                                            },
+                                            "sel": {
+                                                "@fl": "c99",
+                                                "@loc": "c,99,75,99,76",
+                                                "@dtype_id": "4",
+                                                "varref": {
+                                                    "@fl": "c99",
+                                                    "@loc": "c,99,61,99,75",
+                                                    "@name": "o_test_3_wdata",
+                                                    "@dtype_id": "3"
+                                                },
+                                                "const": [
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,78,99,79",
+                                                        "@name": "4'h0",
+                                                        "@dtype_id": "5"
+                                                    },
+                                                    {
+                                                        "@fl": "c99",
+                                                        "@loc": "c,99,76,99,77",
+                                                        "@name": "32'h8",
+                                                        "@dtype_id": "2"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@fl": "c100",
+                                    "@loc": "c,100,6,100,12",
+                                    "@name": "o_data",
+                                    "@direction": "out",
+                                    "@portIndex": "6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c106",
+                    "@loc": "c,106,8,106,14",
+                    "@name": "master",
+                    "@origName": "master",
+                    "var": [
+                        {
+                            "@fl": "c107",
+                            "@loc": "c,107,20,107,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c108",
+                            "@loc": "c,108,20,108,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c109",
+                            "@loc": "c,109,20,109,27",
+                            "@name": "o_valid",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_valid"
+                        },
+                        {
+                            "@fl": "c110",
+                            "@loc": "c,110,20,110,27",
+                            "@name": "i_ready",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_ready"
+                        },
+                        {
+                            "@fl": "c111",
+                            "@loc": "c,111,20,111,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        },
+                        {
+                            "@fl": "c112",
+                            "@loc": "c,112,20,112,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        }
+                    ]
+                },
+                {
+                    "@fl": "c117",
+                    "@loc": "c,117,8,117,13",
+                    "@name": "slave",
+                    "@origName": "slave",
+                    "var": [
+                        {
+                            "@fl": "c118",
+                            "@loc": "c,118,20,118,25",
+                            "@name": "i_clk",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_clk"
+                        },
+                        {
+                            "@fl": "c119",
+                            "@loc": "c,119,20,119,26",
+                            "@name": "i_rstn",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_rstn"
+                        },
+                        {
+                            "@fl": "c120",
+                            "@loc": "c,120,20,120,27",
+                            "@name": "i_valid",
+                            "@dtype_id": "1",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_valid"
+                        },
+                        {
+                            "@fl": "c121",
+                            "@loc": "c,121,20,121,27",
+                            "@name": "o_ready",
+                            "@dtype_id": "1",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_ready"
+                        },
+                        {
+                            "@fl": "c122",
+                            "@loc": "c,122,20,122,26",
+                            "@name": "i_data",
+                            "@dtype_id": "2",
+                            "@dir": "input",
+                            "@vartype": "logic",
+                            "@origName": "i_data"
+                        },
+                        {
+                            "@fl": "c123",
+                            "@loc": "c,123,20,123,26",
+                            "@name": "o_data",
+                            "@dtype_id": "2",
+                            "@dir": "output",
+                            "@vartype": "logic",
+                            "@origName": "o_data"
+                        }
+                    ]
+                }
+            ],
+            "typetable": {
+                "@fl": "a0",
+                "@loc": "a,0,0,0,0",
+                "basicdtype": [
+                    {
+                        "@fl": "c118",
+                        "@loc": "c,118,20,118,25",
+                        "@id": "1",
+                        "@name": "logic"
+                    },
+                    {
+                        "@fl": "c6",
+                        "@loc": "c,6,17,6,18",
+                        "@id": "2",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c13",
+                        "@loc": "c,13,17,13,18",
+                        "@id": "3",
+                        "@name": "logic",
+                        "@left": "15",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "4",
+                        "@name": "logic",
+                        "@left": "7",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,33,90,34",
+                        "@id": "5",
+                        "@name": "logic",
+                        "@left": "3",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c90",
+                        "@loc": "c,90,39,90,40",
+                        "@id": "6",
+                        "@name": "logic",
+                        "@left": "23",
+                        "@right": "0"
+                    },
+                    {
+                        "@fl": "c91",
+                        "@loc": "c,91,19,91,20",
+                        "@id": "7",
+                        "@name": "logic",
+                        "@left": "31",
+                        "@right": "0"
+                    }
+                ]
+            }
+        }
+    }
+}
