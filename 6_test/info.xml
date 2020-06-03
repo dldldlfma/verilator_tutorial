@@ -198,24 +198,24 @@
         <port fl="c100" loc="c,100,6,100,12" name="o_data" direction="out" portIndex="6"/>
       </instance>
     </module>
-    <module fl="c106" loc="c,106,8,106,14" name="master" origName="master">
-      <var fl="c107" loc="c,107,20,107,25" name="i_clk" dtype_id="1" dir="input" vartype="logic" origName="i_clk"/>
-      <var fl="c108" loc="c,108,20,108,26" name="i_rstn" dtype_id="1" dir="input" vartype="logic" origName="i_rstn"/>
-      <var fl="c109" loc="c,109,20,109,27" name="o_valid" dtype_id="1" dir="output" vartype="logic" origName="o_valid"/>
-      <var fl="c110" loc="c,110,20,110,27" name="i_ready" dtype_id="1" dir="input" vartype="logic" origName="i_ready"/>
-      <var fl="c111" loc="c,111,20,111,26" name="o_data" dtype_id="2" dir="output" vartype="logic" origName="o_data"/>
-      <var fl="c112" loc="c,112,20,112,26" name="i_data" dtype_id="2" dir="input" vartype="logic" origName="i_data"/>
+    <module fl="c108" loc="c,108,8,108,14" name="master" origName="master">
+      <var fl="c109" loc="c,109,20,109,25" name="i_clk" dtype_id="1" dir="input" vartype="logic" origName="i_clk"/>
+      <var fl="c110" loc="c,110,20,110,26" name="i_rstn" dtype_id="1" dir="input" vartype="logic" origName="i_rstn"/>
+      <var fl="c111" loc="c,111,20,111,27" name="o_valid" dtype_id="1" dir="output" vartype="logic" origName="o_valid"/>
+      <var fl="c112" loc="c,112,20,112,27" name="i_ready" dtype_id="1" dir="input" vartype="logic" origName="i_ready"/>
+      <var fl="c113" loc="c,113,20,113,26" name="o_data" dtype_id="2" dir="output" vartype="logic" origName="o_data"/>
+      <var fl="c114" loc="c,114,20,114,26" name="i_data" dtype_id="2" dir="input" vartype="logic" origName="i_data"/>
     </module>
-    <module fl="c117" loc="c,117,8,117,13" name="slave" origName="slave">
-      <var fl="c118" loc="c,118,20,118,25" name="i_clk" dtype_id="1" dir="input" vartype="logic" origName="i_clk"/>
-      <var fl="c119" loc="c,119,20,119,26" name="i_rstn" dtype_id="1" dir="input" vartype="logic" origName="i_rstn"/>
-      <var fl="c120" loc="c,120,20,120,27" name="i_valid" dtype_id="1" dir="input" vartype="logic" origName="i_valid"/>
-      <var fl="c121" loc="c,121,20,121,27" name="o_ready" dtype_id="1" dir="output" vartype="logic" origName="o_ready"/>
-      <var fl="c122" loc="c,122,20,122,26" name="i_data" dtype_id="2" dir="input" vartype="logic" origName="i_data"/>
-      <var fl="c123" loc="c,123,20,123,26" name="o_data" dtype_id="2" dir="output" vartype="logic" origName="o_data"/>
+    <module fl="c119" loc="c,119,8,119,13" name="slave" origName="slave">
+      <var fl="c120" loc="c,120,20,120,25" name="i_clk" dtype_id="1" dir="input" vartype="logic" origName="i_clk"/>
+      <var fl="c121" loc="c,121,20,121,26" name="i_rstn" dtype_id="1" dir="input" vartype="logic" origName="i_rstn"/>
+      <var fl="c122" loc="c,122,20,122,27" name="i_valid" dtype_id="1" dir="input" vartype="logic" origName="i_valid"/>
+      <var fl="c123" loc="c,123,20,123,27" name="o_ready" dtype_id="1" dir="output" vartype="logic" origName="o_ready"/>
+      <var fl="c124" loc="c,124,20,124,26" name="i_data" dtype_id="2" dir="input" vartype="logic" origName="i_data"/>
+      <var fl="c125" loc="c,125,20,125,26" name="o_data" dtype_id="2" dir="output" vartype="logic" origName="o_data"/>
     </module>
     <typetable fl="a0" loc="a,0,0,0,0">
-      <basicdtype fl="c118" loc="c,118,20,118,25" id="1" name="logic"/>
+      <basicdtype fl="c120" loc="c,120,20,120,25" id="1" name="logic"/>
       <basicdtype fl="c6" loc="c,6,17,6,18" id="2" name="logic" left="31" right="0"/>
       <basicdtype fl="c13" loc="c,13,17,13,18" id="3" name="logic" left="15" right="0"/>
       <basicdtype fl="c90" loc="c,90,33,90,34" id="4" name="logic" left="7" right="0"/>

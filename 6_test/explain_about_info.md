@@ -10,5 +10,10 @@ verilator를 통해 뽑아온 xml에서 json으로 변경
 - top module external port == dictionary
 - top module internal port == dictionary
 - top module instance == list
-- 
+    - top module instance architecture == dictionary
+- module name == string
+- module external port = dictionary
+- module internal port = dictionary
+
+
 
